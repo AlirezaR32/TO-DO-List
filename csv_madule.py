@@ -1,7 +1,7 @@
 import csv
 from task import Task
 def seve_to_csv(data):
-    with open("backup.csv", "w") as file:
+    with open("backup.csv", "w", newline='') as file:
             csv_writer = csv.writer(file, delimiter=",")
             csv_writer.writerow(["name, description, priority"])
             for item in data:
