@@ -22,5 +22,4 @@ def load_from_storage(tasklist):
                     task = Task(name, description, priority)
                     tasklist.append(task)
     except FileNotFoundError:
-        # If file doesn't exist, start with empty list
         pass
